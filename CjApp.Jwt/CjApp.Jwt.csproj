@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>disable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.16.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CjApp.IRepository\CjApp.IRepository.csproj" />
+      <ProjectReference Include="..\CjApp.IService\CjApp.IService.csproj" />
+      <ProjectReference Include="..\CjApp.Model\CjApp.Model.csproj" />
+      <ProjectReference Include="..\CjApp.Repository\CjApp.Repository.csproj" />
+      <ProjectReference Include="..\CjApp.Service\CjApp.Service.csproj" />
+    </ItemGroup>
+
+</Project>
